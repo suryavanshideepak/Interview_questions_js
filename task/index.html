@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="head"></h1>
+    <script>
+        let txt;
+         let student= prompt('Enter the Marks');
+        if(100>student && student>90){
+            txt='Grade A';
+        }
+        else if( 90>student && 80<student){
+            txt='Grade B';
+        }
+        else if( 80>student && student>60){
+            txt='Grade C';
+        }
+        else if( 60>student && student>35){
+            txt='Grade D';
+        }
+        else if( 35>student && student>=0){
+            txt='Fail';
+        }
+        else{
+            alert('enter the valid number');
+        }
+        document.getElementById('head').innerHTML = txt;
+    </script>
+    
+</body>
+</html>
